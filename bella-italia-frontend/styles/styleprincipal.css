@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.pinimg.com/564x/a3/66/2e/a3662e2c2f4c4ca34ce4fb6754f48330.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+/* Estilos para el menú */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    /* Ajuste del ancho del menú */
+    height: 100%;
+
+    background-color: rgba(129, 23, 2, 0.9);
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu .username {
+    color: #EADAC0;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: #EADAC0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu ul li a:hover {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+    z-index: 1;
+    margin-left: 270px;
+
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.nombre-pizzeria {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}

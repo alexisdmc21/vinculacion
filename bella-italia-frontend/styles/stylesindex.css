@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/564x/a3/66/2e/a3662e2c2f4c4ca34ce4fb6754f48330.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 20px;
+  }
+  
+  .nombre-pizzeria {
+    color: #ffffff;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180vh;
+    background-color: rgba(248, 220, 220, 0.5);
+  }
+  
+  .login-container {
+    position: relative;
+    background-color: rgba(63, 21, 3, 0.8);
+    padding: 60px 30px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+  }
+  
+  .login-container img.login-logo {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(63, 21, 3, 0.8);
+    background-color: white;
+  }
+  
+  .login-container h2 {
+    color: #eadac0;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="email"],
+  .login-container input[type="password"],
+  .login-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eadac0;
+    border-radius: 4px;
+    background-color: #3F1503;
+    color: #eadac0;
+    font-size: 1em;
+  }
+  
+  .login-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #C32105;
+    border: none;
+    border-radius: 4px;
+    color: #EADAC0;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #740005;
+  }
+  
+  .login-container button:hover {
+    background-color: #740005;
+  }
+  
+  .login-container .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #EADAC0;
+    text-decoration: none;
+  }
+  
+  .login-container .forgot-password:hover {
+    color: #e4502b;
+  }
+  
+  .toggle-container {
+    margin-top: 20px;
+  }
+  
+  .toggle-container button {
+    background-color: transparent;
+    color: #eadac0;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .toggle-container button:hover {
+    color: #e4502b;
+  }
+  
