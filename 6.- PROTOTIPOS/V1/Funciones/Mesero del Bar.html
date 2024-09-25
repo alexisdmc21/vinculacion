@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meseros de Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://w.forfun.com/fetch/5c/5c291ae39e752c277d531d9d610a8c1e.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            opacity: 1.0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .content {
+            flex: 1 1 300px;
+            padding-right: 20px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            flex: 1 1 300px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c50d0d;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #555;
+            border: 1px solid #666;
+            font-size: 14px;
+        }
+
+        li:hover {
+            background-color: #777;
+        }
+
+        #otras-funciones {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #toggle-btn {
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: auto;
+        }
+
+        #toggle-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #menos-funciones-btn {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        #menos-funciones-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #logo {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .meseros_bar-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 150px auto 0;
+            display: block;
+        }
+
+        .otra-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content,
+            .image-container {
+                flex: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img class="meseros_bar-img"
+                src="https://assets-global.website-files.com/65489618a9e91669c78068e2/65489618a9e91669c7806ec0_smiling-waiter-with-a-cocktail-1024x682.jpeg"
+                alt="mesero_bar">
+            <img class="otra-img"
+                src="https://img.freepik.com/fotos-premium/mesero-exigente-vestido-negro-barba-porcion-khinkali_211786-30.jpg"
+                alt="Otra Imagen 1">
+            <img class="otra-img"
+                src="https://lh6.googleusercontent.com/proxy/Aq5OuHruHWjPGuqNT-VoG70SZztzNs1PAYZVYQyxz_l4EwoCZ8z4rNXMRCMqfZMsGSIIu02xhJXXI5MD9q1plv5eAQ9LKxl8"
+                alt="Otra Imagen 2">
+            <img class="otra-img"
+                src="https://www.retekess.es/BlogImage/20230224/0928475076/sistema-de-buscapersonas-de-chef-camarero-mejora-la-comunicacion-del-personal-en-restaurante.jpg"
+                alt="Otra Imagen 3">
+            <img class="otra-img"
+                src="https://mundoformativo.com/wp-content/blogs.dir/1/files//2017/04/C%C3%B3mo-conseguir-trabajo-de-camarero-mesero-en-Irlanda.jpg"
+                alt="Otra Imagen 4">
+            <img class="otra-img"
+                src="https://baresrentables.com/wp-content/uploads/2023/12/meseros-1024x683.jpg"
+                alt="Otra Imagen 5">
+        </div>
+        <div class="content">
+            <div id="logo-container">
+                <a href="https://www.labellaitaliaristorante.com/">
+                    <img id="logo" src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <h1>Funciones del Mesero del Bar</h1>
+            <ul>
+                <li>• Conocer uso de material y equipo de bar.
+                </li>
+                <li>• Limpieza de mesas y estaciones.
+                </li>
+                <li>• Responsable del montaje de mesas.
+                </li>
+                <li>• Mantener surtidas las estaciones de servicio.
+                </li>
+                <li>• Ayudar al acomodo de clientes.
+                </li>
+            </ul>
+            <div id="otras-funciones">
+                <p>Otras funciones:</p>
+                <ul>
+                    <li>• Manejo correcto de cristalería.
+                    </li>
+                    <li>• Conocer ingredientes y preparación de bebidas y botanas.
+                    </li>
+                    <li>• Sugerir aperitivos y cócteles.
+                    </li>
+                    <li>• Aplicar sistema para escribir órdenes.
+                    </li>
+                    <li>• Presentar lista de vinos al cliente.
+                    </li>
+                    <li>• Tomar órdenes de vinos y bebidas.
+                    </li>
+                    <li>• Conocer temperaturas usuales de vinos.
+                    </li>
+                    <li>• Abrir y servir vinos.
+                    </li>
+                    <li>• Servir bebidas a la mesa.
+                    </li>
+                    <li>• Reemplazar ceniceros.
+                    </li>
+                    <li>• Recoger vasos y copas sucias.
+                    </li>
+                    <li>• Portar encendedor para auxiliar cliente.
+                    </li>
+                    <li>• Solicitar cuentas al cajero.
+                    </li>
+                    <li>• Pagar cuentas al cajero y despedir cliente.
+                    </li>
+                    <li>• Mantener cordura y educación.
+                    </li>
+                    <li>• Mantener higiene física y presentación.
+                    </li>
+                    <li>• Hacer uso adecuado de herramientas.
+                    </li>
+                </ul>
+            </div>
+            <button id="toggle-btn">Mostrar otras funciones</button>
+            <button id="menos-funciones-btn">Mostrar menos funciones</button>
+            <div class="back-button">
+                <img src="https://i.pinimg.com/564x/eb/64/ce/eb64ce026e64a9c6d7d242304a1277d3.jpg" alt="Volver"
+                    onclick="window.location.href='principal.html';">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggleButton = document.getElementById("toggle-btn");
+            var menosFuncionesButton = document.getElementById("menos-funciones-btn");
+            var otrasFunciones = document.getElementById("otras-funciones");
+            var otraImagenes = document.querySelectorAll(".otra-img");
+            var isMostrando = false;
+
+            toggleButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "none";
+                menosFuncionesButton.style.display = "block";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+
+            menosFuncionesButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "block";
+                menosFuncionesButton.style.display = "none";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

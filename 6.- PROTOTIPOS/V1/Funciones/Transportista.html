@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportista y Mantenimiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://w.forfun.com/fetch/5c/5c291ae39e752c277d531d9d610a8c1e.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            opacity: 1.0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .content {
+            flex: 1 1 300px;
+            padding-right: 20px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            flex: 1 1 300px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c50d0d;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #555;
+            border: 1px solid #666;
+            font-size: 14px;
+        }
+
+        li:hover {
+            background-color: #777;
+        }
+
+        #otras-funciones {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #toggle-btn {
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: auto;
+        }
+
+        #toggle-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #menos-funciones-btn {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        #menos-funciones-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #logo {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .trans-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 150px auto 0;
+            display: block;
+        }
+
+        .otra-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content,
+            .image-container {
+                flex: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img class="trans-img"
+                src="https://www.dolceeventosmexico.com.mx/wp-content/uploads/2019/10/Mesero_dolceeventos.jpg"
+                alt="Contador">
+            <img class="otra-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHD6OIgbtXb0CVmRJw5wZOZNEjxa1_J5KGdqYeU8_vA&s"
+                alt="Otra Imagen 1">
+            <img class="otra-img"
+                src="https://estudiarcocina.com/wp-content/uploads/2023/05/Capitan-de-meseros-funciones-1024x576.jpg"
+                alt="Otra Imagen 2">
+            <img class="otra-img"
+                src="https://www.upmenu.com/wp-content/uploads/2022/08/mesero.jpg"
+                alt="Otra Imagen 3">
+        </div>
+        <div class="content">
+            <div id="logo-container">
+                <a href="https://www.labellaitaliaristorante.com/">
+                    <img id="logo" src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <h1>Funciones del Transportista y Mantenimiento</h1>
+            <ul>
+                <li>• Controlar el mantenimiento preventivo y correctivo de vehículos.
+                </li>
+                <li>• Cuidado y transportación de mercadería.
+                </li>
+                <li>• Entrega-recepción de mercadería.
+                </li>
+                <li>• Entrega-recepción de documentos.
+                </li>
+                <li>• Colaborar en otras áreas.
+                </li>
+            </ul>
+            <div id="otras-funciones">
+                <p>Otras funciones:</p>
+                <ul>
+                    <li>• Mantener instalaciones y áreas.
+                    </li>
+                    <li>• Programar reparaciones de instalaciones.
+                    </li>
+                    <li>• Asegurar operación 24 horas.
+                    </li>
+                    <li>• Proponer mejoras en equipos.
+                    </li>
+                    <li>• Asignar roles de servicios.
+                    </li>
+                    <li>• Mantener cordura y educación.
+                    </li>
+                    <li>• Mantener higiene física y presentación.
+                    </li>
+                    <li>• Hacer uso adecuado de herramientas.
+                    </li>
+                </ul>
+            </div>
+            <button id="toggle-btn">Mostrar otras funciones</button>
+            <button id="menos-funciones-btn">Mostrar menos funciones</button>
+            <div class="back-button">
+                <img src="https://i.pinimg.com/564x/eb/64/ce/eb64ce026e64a9c6d7d242304a1277d3.jpg" alt="Volver"
+                    onclick="window.location.href='principal.html';">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggleButton = document.getElementById("toggle-btn");
+            var menosFuncionesButton = document.getElementById("menos-funciones-btn");
+            var otrasFunciones = document.getElementById("otras-funciones");
+            var otraImagenes = document.querySelectorAll(".otra-img");
+            var isMostrando = false;
+
+            toggleButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "none";
+                menosFuncionesButton.style.display = "block";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+
+            menosFuncionesButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "block";
+                menosFuncionesButton.style.display = "none";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

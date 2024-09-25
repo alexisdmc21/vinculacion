@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-pizza-dibujada-mano_23-2150905263.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            opacity: 1.0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .content {
+            flex: 1 1 300px;
+            padding-right: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative; 
+        }
+
+        .image-container {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c50d0d;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #555;
+            border: 1px solid #666;
+            font-size: 14px;
+        }
+
+        li:hover {
+            background-color: #777;
+        }
+
+        #otras-funciones {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #toggle-btn {
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: auto;
+        }
+
+        #toggle-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #menos-funciones-btn {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        #menos-funciones-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #logo {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .panadero-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .otra-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content,
+            .image-container {
+                flex: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="principal.html" class="back-button">
+                <img src="https://i.pinimg.com/564x/eb/64/ce/eb64ce026e64a9c6d7d242304a1277d3.jpg" alt="Volver">
+            </a>
+            <div id="logo-container">
+                <a href="https://www.labellaitaliaristorante.com/">
+                    <img id="logo" src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <h1>Funciones del Panadero</h1>
+            <ul>
+                <li>• Retirar los insumos necesarios de bodega.
+                </li>
+                <li>• Formular y pesar los insumos.
+                </li>
+                <li>• Realizar los reportes de producción.
+                </li>
+                <li>• Preparar la masa.
+                </li>
+                <li>• Producir panes de diversas variedades.
+                </li>
+            </ul>
+            <div id="otras-funciones">
+                <p>Otras funciones:</p>
+                <ul>
+                    <li>• Elaborar bocaditos dulces y salados.
+                    </li>
+                    <li>• Suministrar combustibles al horno.
+                    </li>
+                    <li>• Controlar el proceso de fermentación de los panes.
+                    </li>
+                    <li>• Hornear los panes.
+                    </li>
+                    <li>• Mantener el puesto de trabajo impecable.
+                    </li>
+                    <li>• Mantener en buen estado de conservación la maquinaria y utensilios.
+                    </li>
+                    <li>• Mantener una mente abierta y aprender.
+                    </li>
+                    <li>• Colaborar en otras áreas.
+                    </li>
+                    <li>• Asistir a cursos de aprendizaje.
+                    </li>
+                    <li>• Realizar otras funciones asignadas.
+                    </li>
+                    <li>• Mantener la cordura y educación.
+                    </li>
+                    <li>• Mantener la higiene física y presentación.
+                    </li>
+                    <li>• Hacer uso adecuado de herramientas.
+                    </li>
+                </ul>
+            </div>
+            <button id="toggle-btn">Mostrar otras funciones</button>
+            <button id="menos-funciones-btn">Mostrar menos funciones</button>
+        </div>
+        <div class="image-container">
+            <img class="panadero-img" src="https://png.pngtree.com/png-clipart/20231108/original/pngtree-woman-as-restaurant-chef-hat-picture-image_13240820.png"
+                alt="Panadero">
+            <img class="otra-img"
+                src="https://resources.workable.com/wp-content/uploads/2018/02/shutterstock_393397513.jpg"
+                alt="Otra Imagen 1">
+                <img class="otra-img"
+                src="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-joyful-african-american-chef-embracing-flour-and-dough-a-cartoon-character-image_13896116.png"
+                alt="Otra Imagen 2">
+                <img class="otra-img"
+                src="https://img.freepik.com/fotos-premium/ia-generativa-anciano-manos-panadero-restaurante-o-cocina-casera_93150-15588.jpg"
+                alt="Otra Imagen 3">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggleButton = document.getElementById("toggle-btn");
+            var menosFuncionesButton = document.getElementById("menos-funciones-btn");
+            var otrasFunciones = document.getElementById("otras-funciones");
+            var otraImagenes = document.querySelectorAll(".otra-img");
+            var isMostrando = false;
+
+            toggleButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "none";
+                menosFuncionesButton.style.display = "block";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+
+            menosFuncionesButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "block";
+                menosFuncionesButton.style.display = "none";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

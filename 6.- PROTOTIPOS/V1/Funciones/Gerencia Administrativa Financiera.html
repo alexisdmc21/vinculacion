@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerente Administrativo Financiero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://w.forfun.com/fetch/5c/5c291ae39e752c277d531d9d610a8c1e.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            opacity: 1.0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start; /* Alinea elementos al principio */
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative; /* Añadido */
+        }
+
+        .content {
+            flex: 1 1 300px;
+            padding-right: 20px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            flex: 1 1 300px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c50d0d;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #555;
+            border: 1px solid #666;
+            font-size: 14px;
+        }
+
+        li:hover {
+            background-color: #777;
+        }
+
+        #otras-funciones {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #toggle-btn {
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: auto;
+        }
+
+        #toggle-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #menos-funciones-btn {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c50d0d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        #menos-funciones-btn:hover {
+            background-color: #940b0b;
+        }
+
+        #logo {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gerente-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 50px; /* Ajusta el margen superior para separar la imagen de la flecha */
+        }
+
+        .otra-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content,
+            .image-container {
+                flex: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img class="gerente-img" src="https://estudiarcocinaonline.es/wp-content/uploads/2022/01/Curso-Gestion-de-Restaurantes-Online-Director-de-Restaurante.webp"
+                alt="Gerente General">
+            <img class="otra-img"
+                src="https://www.imagelato.com/images/article-image-restaurant-administration-manager-4cbe741d.jpg"
+                alt="Otra Imagen 1">
+            <img class="otra-img"
+                src="https://mastercontrol.ec/images/Demo/blog/gerente.jpg"
+                alt="Otra Imagen 2">
+            <img class="otra-img"
+                src="https://www.upmenu.com/wp-content/uploads/2022/08/La-importancia-del-presupuesto-de-un-restaurante.jpg"
+                alt="Otra Imagen 3">
+        </div>
+        <div class="content">           
+            <div id="logo-container">
+                <a href="https://www.labellaitaliaristorante.com/">
+                    <img id="logo" src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <h1>Funciones del Gerente Administrativo Financiero</h1>
+            <ul>
+                <li>• Análizar Aspectos Financieros
+                </li>
+                <li>• Manejar Archivo Administrativo
+                </li>
+                <li>• Administración de Recursos Humanos
+                </li>
+                <li>• Asegurar Existencia de Información</li>
+                <li>• Supervisión de Contabilidad y Responsabilidades Tributarias
+                </li>
+            </ul>
+            <div id="otras-funciones">
+                <p>Otras funciones:</p>
+                <ul>
+                    <li>• Monitoreo y Autorización de Compras
+                    </li>
+                    <li>• Control Completo de Bodegas
+                    </li>
+                    <li>• Optimización de Niveles de Inventario
+                    </li>
+                    <li>• Negociación con Proveedores
+                    </li>
+                    <li>• Elaboración de Presupuestos
+                    </li>
+                    <li>• Vinculación con Mercados de Dinero y Capitales
+                    </li>
+                    <li>• Proyección y Utilización de Fondos
+                    </li>
+                    <li>• Análisis de Flujos de Efectivo
+                    </li>
+                    <li>• Control de Costos
+                    </li>
+                    <li>• Elección de Fuentes y Formas de Financiamiento
+                    </li>
+                    <li>• Elaboración de Decisiones Financieras
+                    </li>
+                    <li>• Análisis de Inversiones
+                    </li>
+                    <li>• Optimización Proceso Administrativo
+                    </li>
+                    <li>• Administración Financiera de la Organización
+                    </li>
+                </ul>
+            </div>
+            <button id="toggle-btn">Mostrar otras funciones</button>
+            <button id="menos-funciones-btn">Mostrar menos funciones</button>
+            <div class="back-button">
+                <img src="https://i.pinimg.com/564x/eb/64/ce/eb64ce026e64a9c6d7d242304a1277d3.jpg" alt="Volver" onclick="window.location.href='principal.html';">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggleButton = document.getElementById("toggle-btn");
+            var menosFuncionesButton = document.getElementById("menos-funciones-btn");
+            var otrasFunciones = document.getElementById("otras-funciones");
+            var otraImagenes = document.querySelectorAll(".otra-img");
+            var isMostrando = false;
+
+            toggleButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "none";
+                menosFuncionesButton.style.display = "block";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+
+            menosFuncionesButton.addEventListener("click", function () {
+                isMostrando = !isMostrando;
+                otrasFunciones.style.display = isMostrando ? "block" : "none";
+                toggleButton.style.display = "block";
+                menosFuncionesButton.style.display = "none";
+
+                otraImagenes.forEach(function (img) {
+                    img.style.display = isMostrando ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
