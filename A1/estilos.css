@@ -1,0 +1,340 @@
+/*Esta parte es un estilo global para toda la pagina*/
+* {
+    padding: 0;               /*Da un espaciado interno que rodea el contenido en este caso es global, toda la pagina*/
+    margin: 4px;              /*Permite darnos un margen de forma transparente alrededor de los elementos de toda la página*/
+    /*Fuente predeterminada para toda la página, se puede cambiar en las secciones requeridas*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*ESTILO PARA TODA LA PÁGINA*/
+body {
+    background: orangered; 
+}
+
+/*ESTILO PARA EL HEADER*/
+/*Esta parte se modifica todo el header con selector a nivel de clase "cabecera"*/
+.cabecera {
+    padding: 20px;             /*Da un espaciado interno que rodea los elementos dentro del contenedor 
+                                cabecera en este caso lo hace solo las partes de aarriba y abajo en un 
+                                tamaño de 20px*/
+    background-color: black; /*Da un fondo de color negro a todo el contenedor*/
+    border-radius: 15px;       /*Propiedad que permite redondear las esquinas del contenedor*/
+    margin-bottom: 5px;        /*Permite darnos un margen de forma transparente alrededor del 
+                                contenedor, pero en este caso solo la parte de abajo*/
+}
+
+/*Desde el selector a nivel de clase se dara estilo especificamente a los elementos de la etiqueta nav*/
+.cabecera nav {
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;        /*Alinea los items al centro verticalmente, contenidos en la etiqueta nav*/
+}
+
+/*Desde el selector a nivel de clase se da estilo a los elementos dentro de la etiqueta nav*/
+.cabecera nav ul {
+    display: flex;
+    padding: 10px;  
+    gap: 3rem;                  /*Propiedad para dar espacio entre elementos de la lista*/       
+    list-style-type: none;      /*El estilo de la lista queda sin efecto*/
+}
+
+/*Desde el selector a nivel de clase se da estilo a los elementos dentro de la lista es decir a los enlaces*/
+.cabecera nav ul li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Se modifica la fuente predeterminada a toda la pagina*/
+    text-decoration: none;      /*Propiedad para quitar el subrayado por defecto como todo enlace*/
+    color: rgb(255, 255, 255);/*Color de la letra en blanco para diferenciar del header negro*/
+    font-size: 20px;            /*Se ajusta el tamaño de la fuente de estos elementos*/
+}
+
+/*Desde el selector a nivel de clase se da efectos hover a los enlaces*/
+.cabecera nav li a:hover {
+    text-decoration: underline; /*Efecto que decora el texto, dando un subrayado al pasar el cursor por los elementos*/
+    color: blue;              /*Color que toma el texto, al pasar el cursor por ellos*/
+}
+
+/*Estilo del contenedor del logo con el selector a nivel de clase "logo"*/
+.logo {
+    gap: 20px;                  
+    align-items: center;        
+    display: flex;
+    color: white;             /*Color del texto en blanco*/
+    font-size: 25px;            /*Tamaño del texto*/
+}
+
+/*Desde el selector a nivel de clase se da estilo a las imagenes*/
+.logo img {
+    filter: invert(100%) brightness(200%); /*Propiedad de filtro ajustando el brillo para que cambie la imagen a blanco*/
+    width: 80px;                           /*Se ajusta el ancho de la imagen*/
+    height: 80px;                          /*Se ajusta el alto de la imagen*/
+}
+
+/*Estilo de la parte de la navegacion de la pagina con el selector de clase "navegacion"*/
+.navegacion {
+    display: flex;
+    gap: 1rem;
+}
+
+/*Desde el selector a nivel de clase se dara estilo especificamente a los elementos  dentro del contenedor div de clase navegacion*/
+.navegacion li {
+    list-style-type: none;
+}
+
+/*Desde el selector a nivel de clase se da estilo a los elementos dentro de la lista es decir a los enlaces*/
+.navegacion li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: white;
+}
+
+/*ESTILOS PARA LA SECCION PORTADA*/
+/*Estilo de enlace "portada" con el selector a nivel de id (inicio)"*/
+#inicio {
+    font-size: 50px;                        
+    border-radius: 15px;
+    background: url(https://wallpaperaccess.com/full/1306117.jpg) no-repeat;
+    width: 100%;                           /*Aqui se ajusta el ancho en relacion a la página*/
+    height: 100vh;                         /*Ajuste de la altura*/
+}
+
+/*Estilo para el texto de la portada con propiedades ya descritas*/
+.texto-inicio {
+    padding: 195px 100px 0;                
+}
+
+/*ESTILOS DE LOS CONTENEDORES DE LAS SECCIONES*/
+/*Estilo para h1 desde el selector texto-inicio*/
+.texto-inicio h1 {
+    font-family: cursive;
+    color: chocolate;
+    -webkit-text-stroke: 1px #ff0000;
+}
+
+/*Estilo de los contenedores de las diferentes secciones*/
+.contenedor-info {
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px 30px 50px; /*Espaciado interno que rodea los elementos dentro del contenedor en todos los lados*/
+    border-radius: 15px;
+}
+
+/*Estilos de los h2 y parrafos que se veran afectados en todas las secciones, mediante el selector de clase*/
+/*Se ven propiedades que ya se explico anteriormente que cumplen el mismo rol*/ 
+.contenedor-info h2 {
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.contenedor-info p {
+    padding: 10px 0;
+}
+
+/*ESTILO PARA LA SECCION MENU*/
+/*Estilo del contenedor que abarca los menus de comidas y bebidas, mediante propiedades como grid*/
+.contenedor-comidas {
+    padding-top: 20px; /*El padding tiene propiedades como: top, left, right, bottom que son los lados del contenedor de los elementos*/
+                       /*Ajusta el padding superior*/
+    margin: 0 auto;    /*Propiedad que centra los contenedores*/
+    display: grid;     /*Organiza los elementos del contenedor en cuadricula*/
+    grid-template-columns: 1fr 1fr; /*Propiedad para especificar la fraccion de de cada columna en este caso son iguales*/
+    gap: 100px;
+    max-width: 900px;  /*Se ajusta el ancho maximo del contendor*/
+}
+
+/*Estilo para cada uno de los menus de comidas y bebidas con el selector de clase contenedor-menu y a los textos de h3*/
+.contenedor-menu {
+    flex-direction: column;  /*Propiedades que organiza los contenedores en columnas*/
+    display: flex;
+    justify-content: center; /*Centrado verticalmente el contenido*/
+    align-items: center;     /*Centrado horizontalmente el contenido*/
+    height: 100%;            /*Se ajusta paa que ocupen todo el alto disponible*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);  /*Propiedad para darle estilo de sombreado del contenedor*/
+}
+
+.contenedor-menu h3 {
+    font-family: cursive;
+}
+
+/*Estilo de la tablas que estan los menus de los platos y bebidas a traves de etiquetas*/
+table {
+    width: 100%;                /*Propiedad que ajusta el ancho total del contenedor*/
+    border-collapse: collapse;  /*Propiedad que evita verse dos lineas de borde y las combina*/
+    margin-top: 10px;           /*Espaciado del contenedor en la parte superior*/
+}
+
+table, th, td {
+    border: 2px solid brown;  /*Color y ancho del borde*/
+}
+
+/*Estilos para el encabezado de la tabla*/
+th {
+    font-weight: bold;               /*Se aplica la letra en negrilla para identificar del resto de textos*/
+    background: hsl(16, 66%, 64%); /*Color de fondo del encabezado de la tabla*/
+    color: black;                  /*Color de la letra*/
+}
+
+/*Estilos para el resto de la tabla*/
+th, td {
+    padding: 12px;
+    text-align: center;          /*Justifica el texto al centro*/
+}
+
+/*ESTILO PARA LA SECCION VISUALIZACION RAPIDA*/
+/*Estilo para presentar mediante fotos, los platos que se ofrecen en el menu*/
+/*En este selector se ajusta como se vera las fotos*/
+.galleria-comida {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /**/
+    gap: 10px;
+    padding: 20px 100px;
+}
+
+/*Selector para dar estilo a cada una de las imagenes*/
+.gallery-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;                /*Propiedad para ocultar contenido*/
+    transition: transform 0.3s ease; /*Propiedad que da zoom a una foto al pasar el cursor por ellas*/
+}
+
+/*Selector para ajustar las proporciones de las fotos dentro del contendeor anterior*/
+.gallery-item img {
+    /*Ajustamos el ancho y altura ocupando el 100%*/
+    width: 100%;                       
+    height: 100%;
+    object-fit: scale-down; /*Propiedad para ajustar la foto si cortarla*/
+}
+
+/*Selector para dar efecto a las fotos*/
+.gallery-item:hover {
+    transform: scale(1.50);           /*Transición se ampliar la foto al pasar el cursor*/
+}
+
+/*Selector que da estilo a las listas ordenadas*/
+.contenedor-info ol {
+    padding: 0 20px;
+}
+
+/*ESTILO PARA SECCION CONTACTANOS*/
+/*Selector para dar estilo al contenedor diferente a las demas secciones cambiando estilos en h2 y parrafos*/
+.contenedor-contactanos {
+    background-color: rgb(116, 117, 192);       /*Color de fondo*/
+    margin: 10px auto;                            /*Se centra el contenido*/ 
+    padding: 20px 30px 50px;
+    border-radius: 15px;
+}
+
+.contenedor-contactanos h2 {
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.contenedor-contactanos p {
+    padding: 10px 0;
+}
+
+/*Selector para dar estilo al formulario*/
+.formulario {
+    padding: 0 200px;   /*Espaciado a los lados para centrar el contenedor del formulario*/
+}
+
+/*Selector para dar estilo al contenedor de todo el formulario*/
+/*Muchas de las propiedades siguientes son repetitivas y explicadas*/
+.seccion-formulario {
+    border-style: dashed;       /*Se aplica un diseño de borde del contenedor*/
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/*Selector para dar estilo a los label (texto de cada caja de texto)*/
+.seccion-formulario label {
+    font-size: 17px;
+    font-family: cursive;
+    font-weight: 300;
+    margin-top: 10px;
+    display: block;             /*Hace que cada label ocupe toda una linea*/
+}
+
+/*Selector para dar estilo a las cajas de texto*/
+.seccion-formulario input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+/*Selector para dar estilo a el area de mensaje*/
+.seccion-formulario textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+/*Selector para dar estilo al boton del formulario*/
+.btn-env {
+    width: 100%;                    /*Ocupa todo el ancho del contenedor*/
+    background: black;            /*Fondo de color negro del boton*/
+    color: white;                 /*Color del texto*/
+    padding: 20px;                  /*Espaciado interno superior e inferior*/
+    border: none;                   /*Propiedad que quita el borde del boton*/
+    cursor: pointer;                /*Hace que el cursor cambie a una mano al pasar por el boton*/
+    display: block;                 /*Hace que cada label ocupe toda una linea*/
+    margin-top: 15px;
+    font-size: 20px;                /*Se ajusta el tamaño de texto*/
+    font-family: cursive;           /*Fuente de la letra*/
+    border-radius: 15px;            /*Redondea el contenedor que sea, este caso el boton*/
+}
+
+/*Selector que da estilo o efecto hover*/
+.btn-env:hover {
+    background-color: orangered;  /*Color al que cambiara cuando se pase el cursor por el boton*/
+    color:black;                  /*Color del texto al pasar el cursor por el boton*/
+}
+
+/*ESTILO PARA EL FOOTER*/
+/*Se da algunas propiedades explicadas*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;               /*Justifica el texto al centro*/
+    font-family: Arial, Helvetica, sans-serif;/*Fuente que se aplica a todo los elementos del contenedor*/
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+/*Para los siguientes selectores se aplica propiedades como padding, margin, efecto hover*/
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-redirigir {
+    margin-top: 10px;
+}
+
+.footer-redirigir a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-redirigir a:hover {
+    color: orangered;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: orangered;
+}
